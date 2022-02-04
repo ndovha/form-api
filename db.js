@@ -1,10 +1,8 @@
 const Pool = require('pg').Pool;
+const connectionString = process.env.DATABASE_URL || 'postgresql://postgres:screens@localhost:5432/node_postgres'
+
 const pool = new Pool({
-    user: 'postgres',
-    password: 'screens',
-    host: 'localhost',
-    port: 5432,
-    database: 'node_postgres'
+    connectionString,
 });
 
 module.exports = pool;
