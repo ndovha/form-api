@@ -13,4 +13,4 @@ app.use(express.json())
 app.use('/api', feedbackRouter)
 
 
-app.listen(PORT, () => console.log(`Streaming service is running on http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`Api service is running on http://localhost:${PORT}`))
